@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Seller.SellerLoginActivity">
+
+    <RelativeLayout
+        android:id="@+id/rltv12345"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:layout_alignParentBottom="true">
+
+
+        <Button
+            android:id="@+id/add_new_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Add a product"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+          android:layout_margin="10dp"
+            />
+        <Button
+            android:id="@+id/slogout_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Logout"
+            android:layout_alignParentBottom="true"
+            android:textColor="@android:color/white"
+            android:textSize="20dp"
+            android:layout_margin="10dp"
+            />
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/seller_home_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rltv12345">
+
+
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+
+
+
+</RelativeLayout>
